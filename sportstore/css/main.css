@@ -321,10 +321,19 @@ li {
     position: relative;
     width: 100%; }
     .main-header .header-content .container {
-      background: #00396e url("../img/header-bg.png") 0% 100% no-repeat;
+      background-color: #00396e;
+      
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
       -webkit-background-size: cover;
               background-size: cover;
       height: 890px; }
+      .no-webp .main-header .header-content .container {
+        background-image: url("../img/header-bg.png");
+      }
+      .webp .main-header .header-content .container {
+        background-image: url("../img/header-bg.webp");
+      }
       .main-header .header-content .container h1 {
         font-weight: 700;
         font-size: 203px;
@@ -517,8 +526,16 @@ li {
       position: relative; }
       .month_offer .container .btn-dark:hover {
         color: #000; }
+    .no-webp .month_offer .container .offer_img {
+      background-image: url("../img/offer-img.png");
+    }
+    .webp .month_offer .container .offer_img {
+      background-image: url("../img/offer-img.webp");
+    }
     .month_offer .container .offer_img {
-      background: #f2f0f0 url("../img/offer-img.png") 70% 50% no-repeat;
+      background-color: #f2f0f0;
+      background-position: 70% 50%;
+      background-repeat: no-repeat;
       -webkit-background-size: cover;
               background-size: cover;
       -ms-grid-column: 2; }
@@ -634,17 +651,28 @@ li {
       -ms-grid-column-align: center; }
     .range_with_ads .container .ad_block2 {
       background: #10101a;
-      background-image: url("../img/pic1.png");
-      background-image: url("../img/pic1.png"), -webkit-linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
-      background-image: url("../img/pic1.png"), -o-linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
-      background-image: url("../img/pic1.png"), -webkit-gradient(linear, left top, right top, from(black), to(rgba(16, 16, 26, 0.5)));
-      background-image: url("../img/pic1.png"), -webkit-linear-gradient(left, black, rgba(16, 16, 26, 0.5));
-      background-image: url("../img/pic1.png"), -o-linear-gradient(left, black, rgba(16, 16, 26, 0.5));
-      background-image: url("../img/pic1.png"), linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
       background-position: 100% 50%;
       background-repeat: no-repeat;
       position: relative;
       -ms-grid-column: 3; }
+      .no-webp .range_with_ads .container .ad_block2 {
+        background-image: url("../img/pic1.png");
+        background-image: url("../img/pic1.png"), -webkit-linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.png"), -o-linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.png"), -webkit-gradient(linear, left top, right top, from(black), to(rgba(16, 16, 26, 0.5)));
+        background-image: url("../img/pic1.png"), -webkit-linear-gradient(left, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.png"), -o-linear-gradient(left, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.png"), linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
+      }
+      .webp .range_with_ads .container .ad_block2 {
+        background-image: url("../img/pic1.webp");
+        background-image: url("../img/pic1.webp"), -webkit-linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.webp"), -o-linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.webp"), -webkit-gradient(linear, left top, right top, from(black), to(rgba(16, 16, 26, 0.5)));
+        background-image: url("../img/pic1.webp"), -webkit-linear-gradient(left, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.webp"), -o-linear-gradient(left, black, rgba(16, 16, 26, 0.5));
+        background-image: url("../img/pic1.webp"), linear-gradient(to right, black, rgba(16, 16, 26, 0.5));
+      }
       .range_with_ads .container .ad_block2 .ad_title2 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
@@ -668,7 +696,7 @@ li {
   display: grid;
   display: -ms-grid;
   grid-template-columns: repeat(4, 1fr); }
-  .sports .sports_row .sports_link {
+  .sports .sports_row .sports_pic {
     display: grid;
     display: -ms-grid;
     position: relative; }
@@ -911,13 +939,18 @@ li {
 @media screen and (max-width: 1800px) {
   .main-header .header-content {
     background-color: #00396e;
-    background-image: url("../img/header-bg.png");
     -webkit-background-size: contain;
             background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
     padding-top: 50%; }
+  .no-webp .main-header .header-content {
+    background-image: url("../img/header-bg.png");
+  }
+  .webp .main-header .header-content {
+    background-image: url("../img/header-bg.webp");
+  }
     .main-header .header-content .container {
       background: none;
       top: 0;

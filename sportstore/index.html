@@ -14,6 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 	<script src="js/downcount.js"></script>
+	<script src="js/modernizr-custom.js"></script>
 
 	<style> body {opacity: 0; overflow-x: hidden;} html {background-color: #00396e;}</style>
 
@@ -198,6 +199,51 @@
 	<section class="range page_section" id="range">
 		<div class="container">
 			<div class="item">
+				<picture>
+					<source srcset="img/boot1-222.webp" type="image/webp">
+					<img src="img/boot1-222.png" alt="boot1">
+				</picture>
+				<div class="item_text">
+					<p class="item_name"><a href="#">Stefan Janoski Max</a></p>
+					<p class="item_new_price">$ 100.00</p>
+					<s class="item_old_price">$200</s>
+				</div>
+			</div>
+			<div class="item">
+				<picture>
+					<source srcset="img/boot2-222.webp" type="image/webp">
+					<img src="img/boot2-222.png" alt="boot2">
+				</picture>
+				<div class="item_text">
+					<p class="item_name"><a href="#">Vandal High Supreme</a></p>
+					<p class="item_new_price">$ 100.00</p>
+					<s class="item_old_price">$200</s>
+				</div>
+			</div>
+			<div class="item">
+				<picture>
+					<source srcset="img/boot3.webp" type="image/webp">
+					<img src="img/boot3.png" alt="boot3">
+				</picture>
+				<div class="item_text">
+					<p class="item_name"><a href="#">New Zoom</a></p>
+					<p class="item_new_price">$ 100.00</p>
+					<s class="item_old_price">$200</s>
+				</div>
+			</div>
+			<div class="item">
+				<picture>
+					<source srcset="img/boot4-222.webp" type="image/webp">
+					<img src="img/boot4-222.png" alt="boot4">
+				</picture>
+				<div class="item_text">
+					<p class="item_name"><a href="#">Fit shoes</a></p>
+					<p class="item_new_price">$ 100.00</p>
+					<s class="item_old_price">$200</s>
+				</div>
+			</div>
+
+			<!-- <div class="item">
 				<img src="img/boot1-222.png" alt="boot1">
 				<div class="item_text">
 					<p class="item_name"><a href="#">Stefan Janoski Max</a></p>
@@ -228,7 +274,7 @@
 					<p class="item_new_price">$ 100.00</p>
 					<s class="item_old_price">$200</s>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -239,14 +285,27 @@
 				<p class="ad_posttitle">Sign up now and <br>get 50% off</p>
 				<a href="#" class="btn-dark btn-dark__ad1">Click here</a>
 			</div>
+
 			<div class="item glasses">
-				<img src="img/glasses1.png" alt="glasses">
+				<picture>
+					<source srcset="img/glasses1.webp" type="image/webp">
+					<img src="img/glasses1.png" alt="glasses">
+				</picture>
 				<div class="item_text">
 					<p class="item_name"><a href="#">Cool glasses</a></p>
 					<p class="item_new_price">$ 100.00</p>
 					<s class="item_old_price">$200</s>
 				</div>
 			</div>
+
+			<!-- <div class="item glasses">
+				<img src="img/glasses1.png" alt="glasses">
+				<div class="item_text">
+					<p class="item_name"><a href="#">Cool glasses</a></p>
+					<p class="item_new_price">$ 100.00</p>
+					<s class="item_old_price">$200</s>
+				</div>
+			</div> -->
 			<div class="ad ad_block2">
 				<p class="ad_title2">Run, <br>eat, sleep <br>and repeat</p>
 				<a href="#" class="btn-dark btn-dark__ad2">Shop now</a>
@@ -257,7 +316,10 @@
 	<section class="range2">
 		<div class="container">
 			<div class="item apple">
-				<img src="img/watches1.png" alt="watches">
+				<picture>
+					<source srcset="img/watches1.webp" type="image/webp">
+					<img src="img/watches1.png" alt="watches">
+				</picture>
 				<div class="item_text">
 					<p class="item_name"><a href="#">Apple watch</a></p>
 					<p class="item_new_price">$ 100.00</p>
@@ -265,7 +327,10 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/boot5.png" alt="boot5">
+				<picture>
+					<source srcset="img/boot5.webp" type="image/webp">
+					<img src="img/boot5.png" alt="boot5">
+				</picture>
 				<div class="item_text">
 					<p class="item_name"><a href="#">Sports shoes</a></p>
 					<p class="item_new_price">$ 100.00</p>
@@ -273,7 +338,10 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/boot4-222.png" alt="boot6">
+				<picture>
+					<source srcset="img/boot4-222.webp" type="image/webp">
+					<img src="img/boot4-222.png" alt="boot4">
+				</picture>
 				<div class="item_text">
 					<p class="item_name"><a href="#">Men shoes</a></p>
 					<p class="item_new_price">$ 100.00</p>
@@ -281,7 +349,10 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="img/boot7.png" alt="boot7">
+				<picture>
+					<source srcset="img/boot7.webp" type="image/webp">
+					<img src="img/boot7.png" alt="boot7">
+				</picture>
 				<div class="item_text">
 					<p class="item_name"><a href="#">Girl shoes</a></p>
 					<p class="item_new_price">$ 100.00</p>
@@ -296,6 +367,71 @@
 		<div class="container">
 			<div class="sports_row">
 				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport1.webp" type="image/webp">
+						<img src="img/sport1.png" alt="sport1">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport2.webp" type="image/webp">
+						<img src="img/sport2.png" alt="sport2">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport3.webp" type="image/webp">
+						<img src="img/sport3.png" alt="sport3">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport4.webp" type="image/webp">
+						<img src="img/sport4.png" alt="sport4">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport5.webp" type="image/webp">
+						<img src="img/sport5.png" alt="sport5">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport6.webp" type="image/webp">
+						<img src="img/sport6.png" alt="sport6">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport7.webp" type="image/webp">
+						<img src="img/sport7.png" alt="sport7">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+				<a class="sports_link" href="#">
+					<picture class="sports_pic">
+						<source srcset="img/sport8.webp" type="image/webp">
+						<img src="img/sport8.png" alt="sport8">
+					</picture>
+					<div class="sports_overlay">
+					</div>
+				</a>
+
+				<!-- <a class="sports_link" href="#">
 					<img src="img/sport1.png" alt="sport1">
 					<div class="sports_overlay">
 					</div>
@@ -334,7 +470,7 @@
 					<img src="img/sport8.png" alt="sport8">
 					<div class="sports_overlay">
 					</div>
-				</a>
+				</a> -->
 			</div>
 		</div>
 	</section>
