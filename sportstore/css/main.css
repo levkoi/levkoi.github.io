@@ -321,10 +321,19 @@ li {
     position: relative;
     width: 100%; }
     .main-header .header-content .container {
-      background: #00396e url("../img/header-bg.png") 0% 100% no-repeat;
+      background-color: #00396e;
+      
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
       -webkit-background-size: cover;
               background-size: cover;
       height: 890px; }
+      .no-webp .main-header .header-content .container {
+        background-image: url("../img/header-bg.png");
+      }
+      .webp .main-header .header-content .container {
+        background-image: url("../img/header-bg.webp");
+      }
       .main-header .header-content .container h1 {
         font-weight: 700;
         font-size: 203px;
