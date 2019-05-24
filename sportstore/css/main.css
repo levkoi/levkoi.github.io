@@ -529,7 +529,7 @@ li {
     .no-webp .month_offer .container .offer_img {
       background-image: url("../img/offer-img.png");
     }
-    .no-webp .month_offer .container .offer_img {
+    .webp .month_offer .container .offer_img {
       background-image: url("../img/offer-img.webp");
     }
     .month_offer .container .offer_img {
